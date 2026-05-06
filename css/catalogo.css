@@ -310,3 +310,38 @@ main,
         font-size: 30px;
     }
 }
+
+.cursor-water {
+    position: fixed;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+
+    border: 2px solid rgba(0, 174, 255, 0.35);
+
+    pointer-events: none;
+    z-index: 9999;
+
+    transform: translate(-50%, -50%);
+
+    backdrop-filter: blur(2px);
+
+    box-shadow:
+        0 0 20px rgba(0,174,255,0.25),
+        0 0 40px rgba(0,174,255,0.15);
+
+    animation: waterWave 2s infinite ease-out;
+}
+
+@keyframes waterWave {
+
+    0% {
+        transform: translate(-50%, -50%) scale(0.9);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1.4);
+        opacity: 0;
+    }
+}
