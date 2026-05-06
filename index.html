@@ -8,6 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="icon" type="image/x-icon" href="/img/logobanca.png">
+
 </head>
 <body>
 
@@ -24,16 +27,16 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Início</a>
+          <a class="nav-link active" href="index.html">Início</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Sobre</a>
+          <a class="nav-link" href="sobre.html">Sobre</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="catalogo.html">Catálogo</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contato</a>
+          <a class="nav-link" href="contato.html">Contato</a>
         </li>
       </ul>
     </div>
@@ -86,25 +89,62 @@
 </section>
 <section class="carousel" aria-label="Carrossel de produtos">
         <div class="carousel-track">
-            <div class="slide"><img src="img/polvo.jpg" alt="Polvo"></div>
-            <div class="slide"><img src="img/salmao.jpg" alt="Salmão"></div>
-            <div class="slide"><img src="img/truta.jpg" alt="Truta"></div>
-            <div class="slide"><img src="img/pescada-branca.jpg" alt="Pescada Branca"></div>
-            <div class="slide"><img src="img/cacao.jpg" alt="Cacau"></div>
-            <div class="slide"><img src="img/congriorosa.jpg" alt="Congrio Rosa"></div>
-            <div class="slide"><img src="img/linguado.jpg" alt="Linguado"></div>
-            <div class="slide"><img src="img/lagosta.jpg" alt="Lagosta"></div>
-            <div class="slide"><img src="img/Vongole.jpg" alt="Vongole"></div>
-            <div class="slide"><img src="img/carne-de-siri.jpg" alt="Carne de Siri"></div>
+            <div class="slide"><img src="img/polvo.jpg" alt="Polvo"><h4 class="polvo">Polvo</h4></div>
+            <div class="slide"><img src="img/salmao.jpg" alt="Salmão"><h4 class="salmao">Salmão</h4></div>
+            <div class="slide"><img src="img/truta.jpg" alt="Truta"><h4 class="truta">Truta</h4></div>
+            <div class="slide"><img src="img/pescada-branca.jpg" alt="Pescada Branca"><h4 class="pescada">Pescada Branca</h4></div>
+            <div class="slide"><img src="img/cacao.jpg" alt="Cacau"><h4 class="cacao">Cação</h4></div>
+            <div class="slide"><img src="img/congriorosa.jpg" alt="Congrio Rosa"><h4 class="congrio">Congrio Rosa</h4></div>
+            <div class="slide"><img src="img/linguado.jpg" alt="Linguado"><h4 class="linguado">Linguado</h4></div>
+            <div class="slide"><img src="img/lagosta.jpg" alt="Lagosta"><h4 class="lagosta">Lagosta</h4></div>
+            <div class="slide"><img src="img/Vongole.jpg" alt="Vongole"><h4 class="vongole">Vongole</h4></div>
+            <div class="slide"><img src="img/carne-de-siri.jpg" alt="Carne de Siri"><h4 class="siri">Carne de Siri</h4></div>
         </div>
         <button class="carousel-btn prev" aria-label="Anterior">‹</button>
         <button class="carousel-btn next" aria-label="Próximo">›</button>
         <div class="carousel-dots" aria-hidden="false"></div>
     </section>
 
+   <section class="sobre-destaque">
+  <div class="container-sobre">
+
+    <div class="conteudo-sobre">
+
+      
+      <div class="texto-sobre">
+
+        <div class="cabecalho-sobre">
+          <span class="tag">Sobre nós</span>
+
+          <h2 class="frase-sobre">
+            Há anos levando peixe fresco direto da feira para a sua mesa.<br>
+            A Banca Machado se destaca pela qualidade, confiança e atendimento próximo ao cliente.
+          </h2>
+        </div>
+
+        <ul>
+          <li>✔ Tradição e experiência no ramo</li>
+          <li>✔ Atendimento próximo e de confiança</li>
+          <li>✔ Qualidade que você percebe no primeiro olhar</li>
+        </ul>
+
+        <a href="sobre.html" class="btn-sobre">Saiba mais</a>
+
+      </div>
+
+      
+      <div class="imagem-sobre">
+        <img src="img/tucunare.png" alt="Tucunaré">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <hr>
-<footer class="bg-dark text-light py-4">
+<footer class="footer-custom text-light py-4">
     <div class="container text-center text-md-start">
       <div class="row"> 
 
@@ -132,7 +172,20 @@
       &copy; 2026 Banca da Feira Machado - Todos os direitos reservados.
     </p>
 </footer>
+
 <script src="js/carousel.js"></script>
+
+<div class="cursor-water"></div>
+
+<script>
+const cursor = document.querySelector(".cursor-water");
+
+document.addEventListener("mousemove", (e) => {
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
+});
+</script>
+
 </body>
 
 </html>
