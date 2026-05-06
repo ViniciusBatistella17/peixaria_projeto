@@ -8,6 +8,24 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.nav-item {
+	display: inline-block;
+	margin-right: 20px;
+	font-size: 20px;
+}
+
+.nav-link {
+	transition: 0.3s;
+}
+
+.nav-link.nav-link:hover {
+	transform: translateY( -2px) scale(1.05);
+}
+
+ .nav-link:active {
+    transform: scale(0.95);
+}
+
 .h1 {
     margin: 24px 0 8px;
     text-align: center;
