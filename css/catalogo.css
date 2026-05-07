@@ -8,23 +8,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.nav-item {
-	display: inline-block;
-	margin-right: 20px;
-	font-size: 20px;
-}
 
-.nav-link {
-	transition: 0.3s;
-}
-
-.nav-link.nav-link:hover {
-	transform: translateY( -2px) scale(1.05);
-}
-
- .nav-link:active {
-    transform: scale(0.95);
-}
 
 .h1 {
     margin: 24px 0 8px;
@@ -155,6 +139,59 @@ body {
 .amarela {
   background: #ebde72;
   color: black;
+}
+
+/* header */
+.nav-item {
+	display: inline-block;
+	margin-right: 20px;
+	font-size: 20px;
+}
+
+.nav-link {
+	transition: 0.3s;
+}
+
+.nav-link.nav-link:hover {
+	transform: translateY( -2px) scale(1.05);
+}
+
+ .nav-link:active {
+    transform: scale(0.95);
+}
+
+.navbar {
+    background-color: #081b2c!important;
+}
+
+.navbar .nav-link {
+    color: #ffffff !important;
+}
+
+.navbar .nav-link:hover {
+    color: #4db8ff!important;
+}
+
+/*footer */ 
+.footer-custom {
+    background-color: #072033;
+}
+
+.footer-custom h5 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.footer-custom li {
+    color: #d1e7ff
+}
+
+.footer-custom a {
+    color: #ffffff
+}
+
+.footer-custom a:hover {
+    color: #4db8ff
 }
 
 
