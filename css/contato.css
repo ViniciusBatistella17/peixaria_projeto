@@ -2,19 +2,94 @@ body {
 	font-family: Arial, sans-serif;
 }
 
-        * {
+* {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f0f8ff;
-            color: #1a3a52;
-            padding: 20px;
-            line-height: 1.6;
-        }
+.cursor-water {
+    position: fixed;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+
+    border: 2px solid rgba(0, 174, 255, 0.35);
+
+    pointer-events: none;
+    z-index: 9999;
+
+    transform: translate(-50%, -50%);
+
+    backdrop-filter: blur(2px);
+
+    box-shadow:
+        0 0 20px rgba(0,174,255,0.25),
+        0 0 40px rgba(0,174,255,0.15);
+
+    animation: waterWave 2s infinite ease-out;
+}
+
+.nav-item {
+	display: inline-block;
+	margin-right: 20px;
+	font-size: 20px;
+}
+
+.nav-link {
+	transition: 0.3s;
+}
+
+.nav-link.nav-link:hover {
+	transform: translateY( -2px) scale(1.05);
+}
+
+ .nav-link:active {
+    transform: scale(0.95);
+}
+
+.navbar {
+    background-color: #081b2c!important;
+}
+
+.navbar .nav-link {
+    color: #ffffff !important;
+}
+
+.navbar .nav-link:hover {
+    color: #4db8ff!important;
+}
+
+
+.footer-custom {
+    background-color: #072033;
+}
+
+.footer-custom h5 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.footer-custom li {
+    color: #d1e7ff
+}
+
+.footer-custom a {
+    color: #ffffff
+}
+
+.footer-custom a:hover {
+    color: #4db8ff
+}
+a i {
+    transition: 0.3s;
+}
+
+a:hover i {
+    transform: scale(1.2);
+}
+
+
 
         h2 {
             color: #0d5c75;
