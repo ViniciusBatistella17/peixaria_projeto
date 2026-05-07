@@ -5,6 +5,8 @@
 }
 
 body {
+  position: relative;
+  overflow-x: hidden;
   font-family: Arial, sans-serif;
   background-color: #f8fbfd;
   color: #222;
@@ -308,4 +310,17 @@ footer img:hover {
 
 .footer-custom a:hover {
     color: #4db8ff
+}
+
+@keyframes waterWave {
+
+    0% {
+        transform: translate(-50%, -50%) scale(0.9);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1.4);
+        opacity: 0;
+    }
 }
