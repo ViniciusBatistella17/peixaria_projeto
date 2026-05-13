@@ -47,18 +47,18 @@
     <p>Dúvidas, sugestões ou encomendas especiais? Manda pra gente!</p>
     <form action="/enviar-contato" method="post">
         <!--1. INPUT TEXT-->
-    <LABEL FOR=´´nome´´>Seu nome:</LABEL></br>
-    <input type="email" id="email" name="email" placeholder="Nome completo" required><br><br>
+    <label for="nome">Nome completo:</label><br>
+    <input type="text" id="nome" name="nome" placeholder="Nome completo" required><br><br>
     <!--2. INPUT EMAIL -->
     <label for="email">E-mail para retorno:</label><br>
-    <input type="email" name="email" placeholder="seu@email.com" required><br><br>
+    <input type="email" id="email" name="email" placeholder="E-mail" required><br><br>
     <!--3. INPUT TEL-->
     <label for="whatsapp">Whatsapp:</label><br>
-    <input type="tel" id="whatsapp" placeholder="(19) 9999-9999" readonly><br><br>
+    <input type="tel" id="whatsapp" name="whatsapp" placeholder="Seu telefone" required><br><br>
     <!--4. Select -->
     <label for="assunto">Assunto:</label><br>
     <select id="assunto" name="assunto" required>
-        <option value=""Selecione o motivo do contato></option>
+        <option value="" selected></option>Selecione o motivo do contato</option>
         <option value="duvida">Duvidas sobre produtos</option>
         <option value="encomenda">Encomenda especial</option>
         <option value="reclamacao">Reclamação</option>
