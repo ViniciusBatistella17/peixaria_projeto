@@ -12,6 +12,14 @@ body {
   color: #222;
 }
 
+.navbar-toggler {
+    border-color: rgba(255,255,255,0.3);
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
 .cursor-water {
     position: fixed;
     width: 90px;

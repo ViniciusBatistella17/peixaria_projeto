@@ -33,6 +33,14 @@ body {
 	font-size: 20px;
 }
 
+.navbar-toggler {
+    border-color: rgba(255,255,255,0.3);
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
 .nav-link {
 	transition: 0.3s;
 }
